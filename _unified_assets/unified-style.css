@@ -1,0 +1,73 @@
+/* Unified desaturated palette and basic component styles */
+:root{
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --primary: #2f6f6f;
+  --primary-2: #8aa6a6;
+  --accent: #dd6b6b;
+  --muted: #9aa6a6;
+  --text: #2b2b2b;
+  --subtext: #586066;
+  --glass: rgba(47,111,111,0.06);
+}
+
+/* Reset basics */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Layout */
+.container{max-width:1100px;margin:0 auto;padding:24px;}
+header.site-header{
+  background: linear-gradient(90deg, rgba(47,111,111,0.06), rgba(138,166,166,0.04));
+  padding:16px 0;
+  box-shadow: 0 6px 18px rgba(43,43,43,0.03);
+  position:sticky;top:0;z-index:999;
+}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:700;color:var(--primary);font-size:1.15rem;text-decoration:none}
+nav.main-nav a{margin:0 8px;text-decoration:none;padding:8px 12px;border-radius:10px;color:var(--text);display:inline-block}
+nav.main-nav a:hover{background:var(--glass);color:var(--primary)}
+a.btn, button.btn{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid transparent;background:var(--primary);color:#fff;text-decoration:none;cursor:pointer}
+a.btn.secondary, button.btn.secondary{background:transparent;color:var(--primary);border-color:var(--primary-2)}
+a.btn.accent{background:var(--accent);border-color:transparent}
+
+/* Sections */
+section{padding:48px 0}
+.section-card{background:var(--surface);border-radius:14px;padding:20px;box-shadow:0 8px 24px rgba(43,43,43,0.04)}
+
+/* Typography */
+h1,h2,h3{color:var(--text);margin:0 0 12px}
+p,li,span{color:var(--subtext)}
+
+/* Forms & inputs */
+input,textarea,select{padding:10px;border-radius:10px;border:1px solid rgba(43,43,43,0.08);background:transparent}
+label{display:block;margin-bottom:6px;color:var(--text)}
+
+/* Tables */
+table{width:100%;border-collapse:collapse;background:var(--surface)}
+table th, table td{padding:10px;border-bottom:1px solid rgba(43,43,43,0.04);text-align:left}
+
+/* Footer */
+footer.site-footer{padding:24px 0;color:var(--subtext)}
+
+/* Utility */
+.text-muted{color:var(--subtext)}
+.center{text-align:center}
+
+/* Make images fit */
+img{max-width:100%;height:auto;border-radius:8px}
+
+/* Small responsiveness */
+@media (max-width:720px){
+  .site-header .container{flex-direction:column;align-items:flex-start}
+  nav.main-nav a{display:inline-block;margin:6px 6px 0 0}
+}

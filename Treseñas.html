@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tus Reseñas - Book-Mastery</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  body {
+    background: #f5f6fa;
+    color: #333;
+  }
+
+  .navbar-custom {
+    background-color: #6c7ae0;
+  }
+
+  .navbar-custom .nav-link,
+  .navbar-custom .navbar-brand {
+    color: #fff !important;
+  }
+
+  .page-title {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4b4e6d;
+  }
+
+  .reseña {
+    display: flex;
+    gap: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #ddd;
+  }
+
+  .reseña:hover,
+  .reseña:focus {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    outline: none;
+  }
+
+  .reseña img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .contenido h3 {
+    margin-top: 0;
+    color: #4b4e6d;
+    font-weight: bold;
+  }
+
+  .valoracion {
+    font-weight: bold;
+    color: #ff9900;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
+    color: #333;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="inicio_unificado.html">Book-Mastery</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="reseñas.html">Reseñas</a></li>
+        <li class="nav-item"><a class="nav-link" href="generos.html">Géneros</a></li>
+      </ul>
+
+      <form class="d-flex me-3">
+        <input class="form-control" type="search" placeholder="Buscar..." aria-label="Buscar">
+      </form>
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Menú</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="login.php">Login</a></li>
+            <li><a class="dropdown-item" href="profile.php">Cuenta</a></li>
+            <li><a class="dropdown-item" href="AbUs.html">About Us</a></li>
+            <li><a class="dropdown-item" href="cv.html">CV</a></li>
+            <li><a class="dropdown-item" href="curso.html">Curso</a></li>
+            <li><a class="dropdown-item" href="cuestionario.html">Cuestionario</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1 class="page-title">Tus Reseñas</h1>
+
+<main class="container mt-4">
+
+  <div tabindex="0" class="reseña" onclick="window.location.href='resenaBajoMismaEstrella.html'" onkeypress="if(event.key==='Enter'){window.location.href='resenaBajoMismaEstrella.html'}">
+    <img src="https://m.media-amazon.com/images/I/91R6VtYwCTL.jpg" alt="Portada Bajo la misma estrella" />
+    <div class="contenido">
+      <h3>Bajo la misma estrella</h3>
+      <p><strong>Autor:</strong> John Green | <strong>Año:</strong> 2012 | <strong>Editorial:</strong> Dutton Books</p>
+      <p><em>Reseñado por ti</em></p>
+      <p class="valoracion">Valoración: ★★★★☆</p>
+    </div>
+  </div>
+
+  <div tabindex="0" class="reseña" onclick="window.location.href='resenaOrgulloPrejuicio.html'" onkeypress="if(event.key==='Enter'){window.location.href='resenaOrgulloPrejuicio.html'}">
+    <img src="https://m.media-amazon.com/images/I/81h2gWPTYJL.jpg" alt="Portada Orgullo y prejuicio" />
+    <div class="contenido">
+      <h3>Orgullo y prejuicio</h3>
+      <p><strong>Autor:</strong> Jane Austen | <strong>Año:</strong> 1813 | <strong>Editorial:</strong> T. Egerton</p>
+      <p><em>Reseñado por ti</em></p>
+      <p class="valoracion">Valoración: ★★★★★</p>
+    </div>
+  </div>
+
+  <div tabindex="0" class="reseña" onclick="window.location.href='resenaPosdataTeAmo.html'" onkeypress="if(event.key==='Enter'){window.location.href='resenaPosdataTeAmo.html'}">
+    <img src="https://m.media-amazon.com/images/I/91R6VtYwCTL.jpg" alt="Portada Posdata: Te amo" />
+    <div class="contenido">
+      <h3>Posdata: Te amo</h3>
+      <p><strong>Autor:</strong> Cecelia Ahern | <strong>Año:</strong> 2004 | <strong>Editorial:</strong> HarperCollins</p>
+      <p><em>Reseñado por ti</em></p>
+      <p class="valoracion">Valoración: ★★★★☆</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2025 Book-Mastery. Todos los derechos reservados.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

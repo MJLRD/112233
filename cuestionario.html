@@ -1,0 +1,56 @@
+<div class="form-box">
+  <form id="formCuestionario">
+
+    <!-- Usuario -->
+    <div class="mb-3">
+      <label for="usuario" class="form-label">Usuario*</label>
+      <input type="text" class="form-control" id="usuario" placeholder="Ej: Tiago123" required>
+    </div>
+
+    <!-- Edad -->
+    <div class="mb-3">
+      <label for="edad" class="form-label">Edad*</label>
+      <input type="number" class="form-control" id="edad" min="13" placeholder="Ej: 20" required>
+    </div>
+
+    <!-- Nacionalidad -->
+    <div class="mb-3">
+      <label for="nacionalidad" class="form-label">Nacionalidad*</label>
+      <input type="text" class="form-control" id="nacionalidad" placeholder="Ej: Argentina" required>
+    </div>
+
+    <!-- Opinión -->
+    <div class="mb-3">
+      <label for="opinion" class="form-label">Opinión*</label>
+      <textarea class="form-control" id="opinion" rows="3" placeholder="Escribe tu opinión aquí..." required></textarea>
+    </div>
+
+    <!-- Calificación -->
+    <div class="mb-3">
+      <label for="calificacion" class="form-label">Calificación (opcional)</label>
+      <select class="form-select" id="calificacion">
+        <option value="">--Seleccionar--</option>
+        <option value="1">1 - Muy mala</option>
+        <option value="2">2 - Mala</option>
+        <option value="3">3 - Regular</option>
+        <option value="4">4 - Buena</option>
+        <option value="5">5 - Excelente</option>
+      </select>
+    </div>
+
+    <!-- Reporte -->
+    <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" id="reporte">
+      <label class="form-check-label" for="reporte">Considero que infringe normas</label>
+    </div>
+
+    <!-- Botón -->
+    <button type="submit" class="btn btn-primary w-100" style="background-color:#6c7ae0; border:none;">
+      Enviar Opinión
+    </button>
+
+  </form>
+</div>
+
+<!-- Archivo JS -->
+<script src="cuestionario.js"></script>

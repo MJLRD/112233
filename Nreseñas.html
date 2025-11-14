@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nuevas Reseñas - Book-Mastery</title>
+
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  body {
+    background: #f5f6fa;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+
+  /* NAVBAR */
+  .navbar-custom {
+    background-color: #6c7ae0;
+  }
+
+  .navbar-custom .nav-link,
+  .navbar-custom .navbar-brand {
+    color: #fff !important;
+  }
+
+  .page-title {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4b4e6d;
+  }
+
+  /* Tarjetas */
+  .reseña {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+
+  .reseña:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .reseña img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .reseña h3 {
+    color: #4b4e6d;
+    font-weight: bold;
+  }
+
+  .reseña p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .usuario {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  footer {
+    background-color: #eee;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+  }
+</style>
+
+<link rel="stylesheet" href="_unified_assets/unified-style.css">
+<script src="_unified_assets/unified-nav.js" defer></script>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="inicio_unificado.html">Book-Mastery</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="reseñas.html">Reseñas</a></li>
+        <li class="nav-item"><a class="nav-link" href="generos.html">Géneros</a></li>
+      </ul>
+
+      <form class="d-flex me-3" style="max-width:500px;">
+        <input class="form-control" type="search" placeholder="Buscar..." aria-label="Buscar">
+      </form>
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Menú</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="login.php">Login</a></li>
+            <li><a class="dropdown-item" href="profile.php">Cuenta</a></li>
+            <li><a class="dropdown-item" href="AbUs.html">About Us</a></li>
+            <li><a class="dropdown-item" href="cv.html">CV</a></li>
+            <li><a class="dropdown-item" href="curso.html">Curso</a></li>
+            <li><a class="dropdown-item" href="cuestionario.html">Cuestionario</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<h1 class="page-title">Nuevas Reseñas</h1>
+
+<!-- CONTENIDO -->
+<main class="container mt-4">
+  <div class="row g-4">
+
+    <!-- Reseña 1 -->
+    <div class="col-md-4">
+      <div tabindex="0" class="reseña" onclick="window.location.href='reseñaEternauta.html'" onkeypress="if(event.key==='Enter'){window.location.href='reseñaEternauta.html'}">
+        <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/2a/eb/2aeb1c2d7391c0c244e25b74d2d8d0b1.jpg" alt="Portada El Eternauta">
+        <h3>El Eternauta</h3>
+        <p><strong>Autor:</strong> Héctor G. Oesterheld & Francisco Solano López<br>
+        <strong>Año:</strong> 1957 • <strong>Editorial:</strong> Hora Cero</p>
+        <p class="usuario">Reseñado por: @comicargentino</p>
+      </div>
+    </div>
+
+    <!-- Reseña 2 -->
+    <div class="col-md-4">
+      <div tabindex="0" class="reseña" onclick="window.location.href='reseñaDosTorres.html'" onkeypress="if(event.key==='Enter'){window.location.href='reseñaDosTorres.html'}">
+        <img src="https://m.media-amazon.com/images/I/91b0C2YNSrL.jpg" alt="Portada Las Dos Torres">
+        <h3>El Señor de los Anillos: Las Dos Torres</h3>
+        <p><strong>Autor:</strong> J. R. R. Tolkien<br>
+        <strong>Año:</strong> 1954 • <strong>Editorial:</strong> George Allen & Unwin</p>
+        <p class="usuario">Reseñado por: @fantasylord</p>
+      </div>
+    </div>
+
+    <!-- Reseña 3 -->
+    <div class="col-md-4">
+      <div tabindex="0" class="reseña" onclick="window.location.href='reseñaPosdata.html'" onkeypress="if(event.key==='Enter'){window.location.href='reseñaPosdata.html'}">
+        <img src="https://m.media-amazon.com/images/I/91R6VtYwCTL.jpg" alt="Portada Posdata: Te amo">
+        <h3>Posdata: Te amo</h3>
+        <p><strong>Autor:</strong> Cecelia Ahern<br>
+        <strong>Año:</strong> 2004 • <strong>Editorial:</strong> HarperCollins</p>
+        <p class="usuario">Reseñado por: @romanticovoz</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Book-Mastery. Todos los derechos reservados.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
